@@ -10,8 +10,8 @@ name = 42
 print("Hola " + str(42) + "!" )	# con una coma
 print("Hola " + str(42) + --  "!" )  # con una +	-- este debería arrojar un error!
 
-# 4. imprimir "Amo comer sushi y pizza" con las comidas en variables
-fave_food1 = "sushi"
+# 4. imprimir "Amo comer Lentejas y pizza" con las comidas en variables
+fave_food1 = "lentejas"
 fave_food2 = "pizza"
 print("Amo comer y {} {} ".format( fave_food1, fave_food2))# con .format()
 print(f"Amo comer y {fave_food1} {fave_food2}") # con una cadena f
