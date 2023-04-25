@@ -1,0 +1,1 @@
+#Este es un stack de python que lo curse el año 2023 en el liceo ICCP
