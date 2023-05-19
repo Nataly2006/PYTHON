@@ -37,10 +37,21 @@ print("La suma de los enteros impares del 0 al 500,000 es:", suma_impares)
 # e imprime la suma final
 
 # Codigo 5
+num = 2018
+
+while num >= 0:
+    print(num)
+    num -= 4
 
 # imprimir números positivos comenzando desde el 2018
 # en cuenta regresiva de 4 en 4  
 
 # Codigo 6
+lowNum = 2
+highNum = 9
+mult = 3
 
+for num in range(lowNum, highNum + 1):
+    if num % mult == 0:
+        print(num)
 # Contador flexible
