@@ -55,3 +55,7 @@ for num in range(lowNum, highNum + 1):
     if num % mult == 0:
         print(num)
 # Contador flexible
+
+lista = [5,7,20,3]
+promedio = sum(lista) / len(lista)
+print(promedio)  # Output: 3.0

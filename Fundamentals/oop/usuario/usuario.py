@@ -13,7 +13,7 @@ class User:
     def mostrar_balance_usuario(self):
         print(f"User: {self.name}, Balance: {self.amount}")
 
-    def transfer_dinero(self,amount,user):
+    def transferir_dinero(self,amount,user):
         self.amount -= amount
         user.amount += amount
         self.mostrar_balance_usuario()
@@ -42,5 +42,4 @@ itachi.hacer_retiro(5000)
 itachi.hacer_retiro(3000)
 itachi.mostrar_balance_usuario()
 
-
-itachi.transfer_dinero(361, Haku)
+itachi.transferir_dinero(361, Haku)
