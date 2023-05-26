@@ -11,4 +11,12 @@ class Ninja:
 
     def attack( self , pirate ):
         pirate.health -= self.strength
+        return self 
+    
+class Character:
+    def __init__(self, name):
+        super().__init__(name, strength=10, speed=5, health=100)
+
+    def special_attack(self, opponent):
+        opponent.health -= self.strength * 2
         return self
