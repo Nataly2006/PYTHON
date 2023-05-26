@@ -1,36 +1,36 @@
 class pet:
 
-    # implement __init__( name , type , tricks ):
     def __init__(self, name , type, tricks, noise):
         self.name = name
         self.type = type
         self.tricks = tricks
         self.health = 100
         self.energy = 50
-        self.noise = noise
+        self.ruido = ruido
 
     # implement the following methods:
     # sleep() - increases the pets energy by 25
-    def sleep(self):
+class dormir(self):
+    def __init__():
         self.energy += 25
         return self
 
     # eat() - increases the pet's energy by 5 & health by 10
-    def eat(self):
+class alimentar(self):
+    def ___init__():
         self.energy += 5
         self.health += 10
         return self
 
     # play() - increases the pet's health by 5
-    def play(self):
+    def jugar(self):
         self.health += 5
         self.energy -= 15
         return self
 
     # noise() - prints out the pet's sound
-    def noise(self):
-        print(self.noise)
-
+    def ruido(self):
+        print(self.ruido)
 
 
 class Ninja:
@@ -45,7 +45,7 @@ class Ninja:
     # implement the following methods:
     # walk() - walks the ninja's pet invoking the pet play() method
     def walk(self):
-        self.pet.play()
+        self.pet.jugar()
         return self
 
     # feed() - feeds the ninja's pet invoking the pet eat() method
@@ -54,14 +54,14 @@ class Ninja:
         if len(self.pet_food) > 0:
             food = self.pet_food.pop()
             print(f"Alimentar {self.pet.name} {food}!")
-            self.pet.eat()
+            self.pet.alimentar()
         else:
             print("Oh no!!! se necesita mas comida!")
         return self
 
     # bathe() - cleans the ninja's pet invoking the pet noise() method
     def bathe(self):
-        self.pet.noise()
+        self.pet.ruido()
 
 my_treats = ['Snausage','Bacon',"Trash Bag"]
 my_pet_food = ['Pizza','Burger']
