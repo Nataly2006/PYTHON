@@ -1,6 +1,15 @@
 local_val = "unicornios mágicos"
 def square(x):
     return x * x
+
+class producto:
+    def __init__(self, name):
+        self.name = name
+        self.balance = 1000
+
+        def agregar_impuesto(self, iva):
+            self.balance *= iva
+
 class Usuario:
     def __init__(self, name):
         self.name = name
@@ -19,6 +28,7 @@ else:
     print("El archivo se está ejecutando porque es importado por otro archivo. El archivo se llama:", __name__)
 
 if __name__ == "__main__":
+    args =[0]
     producto = producto([args])
     print(producto)
     print(producto.agregar_impuesto(0.18))

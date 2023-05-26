@@ -53,10 +53,10 @@ class Ninja:
 
         if len(self.pet_food) > 0:
             food = self.pet_food.pop()
-            print(f"Feeding {self.pet.name} {food}!")
+            print(f"Alimentar {self.pet.name} {food}!")
             self.pet.eat()
         else:
-            print("Oh no!!! you need more pet food!")
+            print("Oh no!!! se necesita mas comida!")
         return self
 
     # bathe() - cleans the ninja's pet invoking the pet noise() method
@@ -66,9 +66,9 @@ class Ninja:
 my_treats = ['Snausage','Bacon',"Trash Bag"]
 my_pet_food = ['Pizza','Burger']
 
-nibbles = Pet("Mr. Nibbles","Horse",['nibbles on things','is invisible'],"Hey Hey")
+Pingüino = pet("Mr. Pingüino","Horse",['Pingüino on things','is invisible'],"Hey Hey")
 
-adrien = Ninja("Adrien","Dion",my_treats,my_pet_food, nibbles)
+adrien = Ninja("Adrien","Dion",my_treats,my_pet_food, Pingüino)
 
 adrien.feed()
 adrien.feed()
