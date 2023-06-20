@@ -1,5 +1,3 @@
-lista =[]
-lista.append(500000)
-lista.append(9999)
-
-print(lista)
+nombre= "Epul"
+edad = 1
+peso = 10.0

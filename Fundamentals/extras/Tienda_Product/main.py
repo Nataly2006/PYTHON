@@ -32,4 +32,5 @@ print("\nHaciendo liquidación de la categoría 'Ropa' con descuento del 20%:")
 tienda.hacer_liquidacion("Ropa", 20)
 
 for producto in tienda.productos:
-    producto.print_info()
+    producto.print_info()   
+    

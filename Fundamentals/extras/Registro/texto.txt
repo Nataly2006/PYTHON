@@ -1,0 +1,17 @@
+En este proyecto, se os pide que diseñéis e implementéis un sistema de registro de asistencia en Python. 
+El sistema deberá permitir a los usuarios registrarse, realizar el check-in y el check-out, y ver los registros de asistencia.
+
+
+1.    Crear la clase Usuario: Esta clase debe tener al menos un atributo: nombre.
+2.    Crear la clase Registro: Esta clase debe tener tres atributos: usuario, tiempo, y tipo (que debería ser “entrada” o “salida”).
+3.    Crear la clase SistemaAsistencia: Esta clase debe tener dos atributos: usuarios y registros, que deben ser 
+    listas para almacenar objetos de las clases Usuario y Registro, respectivamente.
+
+    debe tener los siguientes métodos:
+    •    agregar_usuario(nombre): Crea un nuevo usuario y lo añade a la lista de usuarios.
+    •    registrar_entrada(nombre): Crea un nuevo registro de tipo “entrada” para el usuario con el nombre dado y lo añade a la lista de registros.
+    •    registrar_salida(nombre): Crea un nuevo registro de tipo “salida” para el usuario con el nombre dado y lo añade a la lista de registros.
+    •    listar_registros(): Imprime todos los registros de asistencia.
+
+      Crear la función main: Esta función debe implementar una interfaz de usuario en la línea de comandos que permita a los usuarios interactuar con
+       el sistema de asistencia. Debe proporcionar opciones para agregar usuarios, registrar la entrada y salida, y ver los registros de asistencia.
