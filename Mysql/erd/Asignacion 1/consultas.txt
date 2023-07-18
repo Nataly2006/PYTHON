@@ -1,0 +1,54 @@
+use asignacion_1;
+
+select *
+from users;
+
+-- Creando usuarios
+
+-- usuario 1
+INSERT INTO users(id_users,firts_name,last_name,email,created_at,updated_at)
+VALUES(1,'Nataly','Epul','Nataly@gmail.com',now(),now());
+
+-- usuario 2
+INSERT INTO users(id_users,firts_name,last_name,email,created_at,updated_at)
+VALUES(2,'Hinata','Hyuga','princesa8@gmail.com',now(),now());
+
+-- usuario 3
+INSERT INTO users(id_users,firts_name,last_name,email,created_at,updated_at)
+VALUES(3,'kiba','inosuka','perro8@gmail.com',now(),now());
+
+-- Recuperacion de email
+
+SELECT * 
+FROM users
+WHERE email LIKE "N%";
+
+-- Recuperacion de la  id del ultimo usuario
+
+SELECT *
+FROM users
+WHERE id_users = 3;
+
+-- cambia el usuario con id=3 para que su apellido sea Panqueques
+
+UPDATE users
+SET last_name = 'panqueques'
+WHERE id_users=3;
+
+-- eliminar el usuario con id=2 
+
+DELETE FROM users 
+WHERE id_users=2;
+
+-- obtén todos los usuarios, ordenados por su nombre
+
+SELECT *
+FROM users
+ORDER BY firts_name ASC;
+
+-- Consulta BONUS: obtén todos los usuarios, 
+-- ordenados por su nombre en orden descendente
+
+SELECT *
+FROM users
+ORDER BY firts_name DESC;
