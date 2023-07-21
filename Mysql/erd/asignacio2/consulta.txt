@@ -1,0 +1,108 @@
+use coding_dojo;
+
+select *
+from dojos;
+
+-- Creando dojos
+
+-- dojo 1
+INSERT INTO dojos(id_dojo,nombre,created_at,updated_at)
+VALUES(1,'Konoha',now(),now());
+
+-- dojo 2
+INSERT INTO dojos(id_dojo,nombre,created_at,updated_at)
+VALUES(2,'Kumogakure',now(),now());
+
+-- dojo 3
+INSERT INTO dojos(id_dojo,nombre,created_at,updated_at)
+VALUES(3,'Sunagake',now(),now());
+
+-- Eliminando dojos
+
+DELETE FROM dojos
+WHERE id_dojo=1;
+
+DELETE FROM dojos
+WHERE id_dojo=2;
+
+DELETE FROM dojos
+WHERE id_dojo=3;
+
+-- Creando dojos NUEVOS 
+
+-- dojo 1
+INSERT INTO dojos(id_dojo,nombre,created_at,updated_at)
+VALUES(1,'Kirigakure',now(),now());
+
+-- dojo 2
+INSERT INTO dojos(id_dojo,nombre,created_at,updated_at)
+VALUES(2,'Raikage',now(),now());
+
+-- dojo 3
+INSERT INTO dojos(id_dojo,nombre,created_at,updated_at)
+VALUES(3,'Mizukage',now(),now());
+
+-- Ninjas 
+
+select *
+from ninjas;
+
+-- Creacion de Ninjas del Dojo 1
+
+-- Ninja 1
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(1,'Puca','Garu',now(),now(),1);
+
+-- Ninja 2
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(2,'Ranma','Saotome',now(),now(),1);
+
+-- Ninja 3
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(3,'Pingui','Death',now(),now(),1);
+
+-- Creacion de Ninjas del Dojo 2
+
+-- Ninja 1
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(4,'baltazar','Flores',now(),now(),2);
+
+-- Ninja 2
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(5,'kitsune','akatsuki',now(),now(),2);
+
+-- Ninja 3
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(6,'Ryoga','Hibiki',now(),now(),2);
+
+-- Creacion de Ninjas del Dojo 3
+
+-- Ninja 1
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(7,'Deidara','bomba',now(),now(),3);
+
+-- Ninja 2
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(8,'Hidan','Hacha',now(),now(),3);
+
+-- Ninja 3
+INSERT INTO ninjas(id_ninja,first_name,last_name,created_at,updated_at,dojos_id_dojo)
+VALUES(9,'Juzo','Biwa',now(),now(),3);
+
+-- recuperacion todos los ninjas del primer dojo
+
+SELECT *
+FROM ninjas
+LIMIT 3;
+
+-- recupera todos los ninjas del último dojo
+
+SELECT *
+FROM ninjas
+WHERE dojos_id_dojo = 3;
+
+-- recupera el dojo del último ninja
+
+SELECT dojos_id_dojo
+FROM ninjas
+WHERE id_ninja = 9;
