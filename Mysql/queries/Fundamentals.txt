@@ -1,0 +1,4 @@
+SELECT name,language,cities
+FROM countries,languages,cities
+ORDER BY total_cities DESC;
+-- NOSE QUE HICe 
