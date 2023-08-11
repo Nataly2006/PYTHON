@@ -15,14 +15,10 @@ FROM languages;
 -- Tu consulta debe ordenar el resultado por porcentaje de habla del idioma en orden descendente. (1)
 
 -- CONSULTA 
-SELECT name,languages,percentage
+SELECT name,language,percentage
 FROM countries,languages
 WHERE language LIKE "Slovene%"
 ORDER BY percentage DESC;
-
-SELECT percentage
-FROM languages
-WHERE language LIKE "Slovene%";
 -- ------------------------------------------------------------------------------------------------------------------------------------
 -- 2. ¿Qué consulta ejecutarías para mostrar el número total de ciudades de cada país?  Tu consulta debe devolver el nombre del país,
 -- el idioma y el número total de ciudades. Tu consulta debe ordenar el resultado por el número de ciudades en orden descendente. (3)

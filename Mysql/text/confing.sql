@@ -1,4 +1,4 @@
 SELECT * FROM names;
 
 INSERT INTO names (name)
-VALUES ("Adrien"), ("Mr. Nibbles");
+VALUES ("Haku"), ("Mr. Dragon");
